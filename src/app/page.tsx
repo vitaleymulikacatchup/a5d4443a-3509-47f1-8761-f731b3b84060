@@ -35,7 +35,6 @@ export default function Home() {
         <NavbarStyleMinimal
           logoSrc="/brand/carshop-logo.svg"
           brandName="CarShop"
-          navItems={navItems}
         />
       </div>
       <div id="hero" data-section="hero" className="scroll-mt-24 bg-blue-50 text-blue-900">
