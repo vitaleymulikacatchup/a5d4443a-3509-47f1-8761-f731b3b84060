@@ -8,7 +8,13 @@ import ProductCardTwo from '@/components/sections/product/ProductCardTwo';
 import ContactSplit from '@/components/sections/contact/ContactSplit';
 import FooterBaseReveal from '@/components/sections/footer/FooterBaseReveal';
 
-const assetMap = /* provided JSON array */;
+const assetMap = [
+  { id: 'hero-image', url: 'https://images.pexels.com/photos/17632052/pexels-photo-17632052.jpeg?auto=compress&cs=tinysrgb&h=650&w=940', alt: 'Showroom featuring luxury sports cars, Lamborghini models, with sleek design and modern architecture.' },
+  { id: 'feature-image', url: 'https://images.pexels.com/photos/10866820/pexels-photo-10866820.jpeg?auto=compress&cs=tinysrgb&h=650&w=940', alt: 'A vintage hot rod showcased at a car show, attracting onlookers with its retro design.' },
+  { id: 'product-image-1', url: 'https://images.pexels.com/photos/210019/pexels-photo-210019.jpeg?auto=compress&cs=tinysrgb&h=650&w=940', alt: 'A sleek red sports car driving fast on a forest road, showcasing speed and luxury.' },
+  { id: 'product-image-2', url: 'https://images.pexels.com/photos/14836357/pexels-photo-14836357.jpeg?auto=compress&cs=tinysrgb&h=650&w=940', alt: 'A stylish blue SUV parked by the ocean in Busan, South Korea, on a sunny day.' },
+  { id: 'product-image-3', url: 'https://images.pexels.com/photos/27639321/pexels-photo-27639321.jpeg?auto=compress&cs=tinysrgb&h=650&w=940', alt: 'A stylish black Kia K5 sedan parked in a modern urban area, reflecting city architecture.' },
+];
 
 const navItems = [
   { name: 'Home', id: 'hero' },
@@ -39,7 +45,7 @@ export default function Home() {
             description="Offering the finest selection of vehicles to fit your lifestyle."
             imageSrc={assetMap.find(a => a.id === 'hero-image')?.url}
             buttons={[
-              { text: 'Explore Now', href: 'feature' },
+              { text: 'Explore Now', href: 'features' },
               { text: 'Contact Us', href: 'contact' },
             ]}
           />
